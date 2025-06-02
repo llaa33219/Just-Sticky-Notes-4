@@ -1,0 +1,18 @@
+name = "just-sticky-notes"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# R2 버킷 바인딩
+[[r2_buckets]]
+binding = "STICKY_NOTES_BUCKET"
+bucket_name = "just-sticky-notes-storage"
+
+# KV 네임스페이스 (선택사항 - 세션 관리용)
+[[kv_namespaces]]
+binding = "SESSIONS"
+id = "your-kv-namespace-id"
+preview_id = "your-preview-kv-namespace-id"
+
+# 환경 변수
+[vars]
+ENVIRONMENT = "production" 

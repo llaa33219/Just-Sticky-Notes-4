@@ -1,0 +1,28 @@
+{
+  "name": "just-sticky-notes-workers",
+  "version": "2.0.0",
+  "description": "실시간 스티키 노트 커뮤니티 사이트 - Cloudflare Workers 버전",
+  "main": "worker.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "start": "wrangler dev --port 8787",
+    "build": "echo 'No build step required for Workers'",
+    "preview": "wrangler dev --remote"
+  },
+  "keywords": [
+    "sticky-notes",
+    "realtime",
+    "websocket",
+    "cloudflare-workers",
+    "collaborative"
+  ],
+  "author": "Just Sticky Notes Team",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.78.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+} 
